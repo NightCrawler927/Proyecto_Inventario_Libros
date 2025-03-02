@@ -1,34 +1,34 @@
-# Sistema de Inventario de Libros
+# Sistema de Gestión de Inventario de Libros
 
-Sistema backend para la gestión de un inventario de libros, que incluye información sobre autores y géneros literarios. Desarrollado con Node.js, Express, PostgreSQL y Sequelize.
+Este proyecto implementa un sistema backend para la gestión de un inventario de libros, con soporte para la administración de autores y géneros literarios. Está desarrollado utilizando Node.js, Express, PostgreSQL y Sequelize, y ofrece una API RESTful documentada con Swagger.
 
 ## Tabla de Contenidos
 
-- [Descripción General](#descripción-general)
-- [Características](#características)
+- [Visión General](#visión-general)
+- [Características Principales](#características-principales)
 - [Diagrama Entidad-Relación](#diagrama-entidad-relación)
-- [Requisitos](#requisitos)
-- [Instalación](#instalación)
+- [Requisitos del Sistema](#requisitos-del-sistema)
+- [Guía de Instalación](#guía-de-instalación)
 - [Configuración](#configuración)
-- [Uso](#uso)
+- [Instrucciones de Uso](#instrucciones-de-uso)
 - [Estructura del Proyecto](#estructura-del-proyecto)
-- [API Endpoints](#api-endpoints)
-- [Docker](#docker)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Endpoints de la API](#endpoints-de-la-api)
+- [Dockerización](#dockerización)
+- [Tecnologías Empleadas](#tecnologías-empleadas)
 - [Contribuciones](#contribuciones)
 
-## Descripción General
+## Visión General
 
-Este proyecto implementa un sistema backend para gestionar un inventario de libros con sus respectivos autores y géneros. La aplicación sigue una arquitectura por capas (Controllers, Services, Models), utiliza Sequelize como ORM para PostgreSQL, y expone una API RESTful documentada con Swagger.
+Este sistema backend permite gestionar un inventario de libros, junto con la información de los autores y géneros asociados. Utiliza una arquitectura basada en capas (controladores, servicios y modelos), Sequelize como ORM para interactuar con la base de datos PostgreSQL, y proporciona una API RESTful con documentación interactiva mediante Swagger.
 
-## Características
+## Características Principales
 
-- CRUD completo para libros, autores y géneros
-- Relaciones entre entidades (one-to-many)
-- Validaciones de datos mediante middlewares
-- Migraciones y semillas para la base de datos
-- Documentación interactiva de la API con Swagger
-- Containerización con Docker (opcional)
+- CRUD completo para libros, autores y géneros literarios.
+- Soporte para relaciones entre entidades (uno a muchos).
+- Validación de datos utilizando middlewares.
+- Migraciones y semillas para el manejo de la base de datos.
+- Documentación interactiva de la API con Swagger.
+- Contenerización con Docker (opcional).
 
 ## Diagrama Entidad-Relación
 
@@ -51,16 +51,16 @@ Este proyecto implementa un sistema backend para gestionar un inventario de libr
 
 ## Requisitos
 
-- Node.js (v14 o superior)
-- PostgreSQL (v12 o superior)
-- npm o yarn
+- Node.js v14 o superior.
+- PostgreSQL v12 o superior.
+- npm o yarn.
 
 ## Instalación
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/sistema-inventario-libros.git
-   cd sistema-inventario-libros
+   git clone https://github.com/NightCrawler927/Proyecto_Inventario_Libros.git
+   cd Proyecto_Inventario_Libros
    ```
 
 2. Instalar dependencias:
@@ -119,7 +119,7 @@ npm run dev
 ### Iniciar en modo producción
 
 ```bash
-npm start
+npm start (poner el index principal dentro de una carpeta "src")
 ```
 
 ### Acceder a la documentación de la API
@@ -244,12 +244,4 @@ En el archivo `docker-compose.yml` se definen las variables de entorno para los 
 - **Docker**: Containerización (opcional)
 - **ESLint**: Linting del código
 
-## Contribuciones
 
-Las contribuciones son bienvenidas. Por favor, sigue estos pasos:
-
-1. Haz fork del repositorio
-2. Crea una rama para tu función (`git checkout -b feature/nueva-funcion`)
-3. Realiza tus cambios y commit (`git commit -am 'Añadir nueva función'`)
-4. Sube tus cambios (`git push origin feature/nueva-funcion`)
-5. Crea un Pull Request
